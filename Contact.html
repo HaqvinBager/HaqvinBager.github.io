@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Home</title>
+        <title>Contact</title>
         <style>
             h1
             {
@@ -44,7 +44,7 @@
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 16px;
+                font-size: 32px;
                 margin: 4px 2px;
                 transition-duration: 0.4s;
                 cursor: pointer;
@@ -56,6 +56,11 @@
                 border: 2px solid black;
             }
             .HeaderButton:hover
+            {
+                background-color: black;
+                color: white;
+            }
+            .HeaderButtonSelected
             {
                 background-color: black;
                 color: white;
@@ -98,7 +103,7 @@
             <button class = "HeaderButton" onclick="OpenPage(3)">
                 TGA
             </button>
-            <button class = "HeaderButton" onclick="OpenPage(4)">
+            <button class = "HeaderButtonSelected">
                 Contact
             </button>
         </div>

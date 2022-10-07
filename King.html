@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Home</title>
+        <title>King</title>
         <style>
             h1
             {
@@ -44,7 +44,7 @@
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 16px;
+                font-size: 32px;
                 margin: 4px 2px;
                 transition-duration: 0.4s;
                 cursor: pointer;
@@ -56,6 +56,11 @@
                 border: 2px solid black;
             }
             .HeaderButton:hover
+            {
+                background-color: black;
+                color: white;
+            }
+            .HeaderButtonSelected
             {
                 background-color: black;
                 color: white;
@@ -92,7 +97,7 @@
             <button class = "HeaderButton" onclick="OpenPage(1)">
                 Home
             </button>
-            <button class = "HeaderButton" onclick="OpenPage(2)">
+            <button class = "HeaderButtonSelected">
                 King
             </button>
             <button class = "HeaderButton" onclick="OpenPage(3)">
