@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>Home</title>
         <style>
             h1
             {
@@ -7,6 +8,7 @@
                 right: 50%;
                 top: 550px;
                 text-align: center;
+                color: white;
             }
             p
             {
@@ -14,6 +16,7 @@
                 left: 50%;
                 top: 550px;
                 text-align: center;
+                color: white;
             }
             .TopBorder
             {
@@ -23,12 +26,21 @@
                 top: 0%;
                 left: 0%;
             }
+            .Body
+            {
+                background-color: black;
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 20px;
+                left: 0%;
+            }
             .Button
             {
                 background-color: white;
                 border: none;
                 color: white;
-                padding: 16px 32px;
+                padding: 0px 32px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
@@ -50,25 +62,26 @@
             }
         </style>
         <script>
+            var ButtonPadding = 0;
             function OpenPage(index)
             {
                 switch(index)
                 {
 
                     case 1:
-                        window.open("https://haqvinbager.github.io");
+                        window.location.href = "https://haqvinbager.github.io";
                         break;
                     case 2:
-                        window.open("https://haqvinbager.github.io/King");
+                        window.location.href = "https://haqvinbager.github.io/King";
                         break;
                     case 3:
-                        window.open("https://haqvinbager.github.io/TheGameAssembly");
+                        window.location.href = "https://haqvinbager.github.io/TheGameAssembly";
                         break;
                     case 4:
-                        window.open("https://haqvinbager.github.io/Contact");
+                        window.location.href = "https://haqvinbager.github.io/Contact";
                         break;
                     default:
-                        window.open("https://haqvinbager.github.io");
+                        window.location.href = "https://haqvinbager.github.io";
                         break;
                 }
             }
@@ -83,17 +96,19 @@
                 King
             </button>
             <button class = "HeaderButton" onclick="OpenPage(3)">
-                The Game Assembly
+                TGA
             </button>
             <button class = "HeaderButton" onclick="OpenPage(4)">
                 Contact
             </button>
         </div>
-        <h1>
-            Contact
-        </h1>
-        <p>
-            Contact info
-        </p>
+        <div class = "Body">
+            <h1>
+                Contact
+            </h1>
+            <p>
+                Information
+            </p>
+        </div>
     </body>
 </html>
