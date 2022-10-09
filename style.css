@@ -2,7 +2,7 @@ h1
 {
     position: absoulte;
     right: 50%;
-    top: 550px;
+    top: 20vw;
     text-align: center;
     color: white;
 }
@@ -10,7 +10,7 @@ p
 {
     position: absoulte;
     left: 50%;
-    top: 550px;
+    top: 20vw;
     text-align: center;
     color: white;
 }
@@ -18,7 +18,7 @@ p
 {
     background-color: darkgrey;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0%;
     left: 0%;
 }
@@ -28,7 +28,6 @@ p
     width: 100%;
     height: auto;
     position: absolute;
-    top: 20px;
     left: 0%;
 }
 /* .Button
@@ -50,8 +49,8 @@ p
     background-color: transparent;
     color: black;
     border: none;
-    padding: 0px 32px;
-    font-size: 100%;
+    padding: 0vw 1.5vw;
+    font-size: 1.5vw;
     
 }
 .HeaderButton:hover
