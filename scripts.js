@@ -1,21 +1,30 @@
+const PageIndicator = Object.freeze
+({
+    HOME: 1,
+    KING: 2,
+    TGA: 3,
+    CONTACT: 4,
+    PERSONAL: 5
+})
+
 function OpenPage(index)
 {
     switch(index)
     {
 
-        case 1:
+        case PageIndicator.HOME:
             window.location.href = "https://haqvinbager.github.io";
             break;
-        case 2:
+        case PageIndicator.KING:
             window.location.href = "https://haqvinbager.github.io/King";
             break;
-        case 3:
+        case PageIndicator.TGA:
             window.location.href = "https://haqvinbager.github.io/TheGameAssembly";
             break;
-        case 4:
+        case PageIndicator.CONTACT:
             window.location.href = "https://haqvinbager.github.io/Contact";
             break;
-        case 5:
+        case PageIndicator.PERSONAL:
             window.location.href = "https://haqvinbager.github.io/Personal";
             break;
         default:
